@@ -1,0 +1,156 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    right: 80px;
+    height: 99px;
+    background-color: var(--black);
+}
+
+.nav-bar > .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+}
+
+.nav-bar > .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-bar > .logo span {
+    margin-right: 5px;
+    font-family: Inter, serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--offWhite);
+}
+
+.nav-bar > .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    column-gap:40px;
+
+}
+
+.nav-item a {
+    color: var(--offWhite);
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.nav-bar > .login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 213px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu > .close {
+    display: none;
+}
+
+.lock-screen {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column;
+        right: 0;
+        left: 0;
+        height: auto;
+        z-index: 2;
+    }
+
+    .nav-bar > .logo span {
+        display: none;
+    }
+
+    .nav-bar > .logo {
+        width: 100vw;
+    }
+
+    .nav-bar > .logo img {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 18px;
+    }
+
+    .nav-bar > .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .nav-bar > .login-wrapper {
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .nav-bar > .nav-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .logo > .mobile-menu .open {
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-right: 18px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .logo > .mobile-menu > .close {
+        margin-top: 37px;
+        margin-bottom: 37px;
+        margin-right: 18px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .nav-bar > .nav-menu.active ~ .login-wrapper {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    .page-container.lock > .lock-screen {
+        display: block;
+        background: var(--black);
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .mobile-menu.active > .open {
+        display: none;
+    }
+
+    .mobile-menu.active > .close {
+        display: block;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+}

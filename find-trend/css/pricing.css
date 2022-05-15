@@ -1,0 +1,189 @@
+.content-box.black-bg > .heading {
+    color: var(--offWhite);
+}
+
+.pricing-switcher {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.pricing-switcher > .text-wrapper {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.pricing-switcher > .text-wrapper.active {
+    color: var(--offWhite);
+}
+
+.pricing-switcher > .text-wrapper {
+    color: var(--gray3);
+}
+
+.pricing-switcher > .tooltip {
+    position: absolute;
+    right: -125px;
+    display: flex;
+    flex-direction: column;
+    color: var(--offWhite);
+}
+
+.pricing-switcher > .tooltip > .text-wrapper {
+    font-family: GoodDog, serif;
+    font-size: 14px;
+    line-height: 14px;
+    transform: rotate(6deg);
+    width: 93px;
+}
+
+.pricing-switcher > .tooltip img {
+    width: 28.39px;
+    height: 34.45px;
+    transform: rotate(107.94deg);
+}
+
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.pricing-section > .pricing-card {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 32px 32px 24px 32px;
+    width: 296px;
+    height: 584px;
+    outline: none;
+    border-radius: 16px;
+    background-color: var(--gray5);
+    transition: all 1s;
+}
+
+.pricing-section > .pricing-card:hover {
+    background-color: var(--primary);
+}
+
+.pricing-section > .pricing-card > .center-content > .btn {
+    width: 100%;
+    transition: all 1s;
+}
+
+.pricing-section > .pricing-card:hover > .center-content > .btn {
+    color: var(--offWhite);
+    background-color: var(--black);
+}
+
+.pricing-section > .pricing-card > .heading {
+    font-family: "Effra Medium", serif;
+    font-size: 36px;
+}
+
+.pricing-section > .pricing-card > .description {
+    font-family: "Effra Medium", serif;
+    font-size: 18px;
+}
+
+.pricing-section > .pricing-card > .price-wrapper > .price {
+    font-family: "Effra Medium", serif;
+    font-size: 64px;
+    color: var(--black);
+}
+
+.pricing-section > .pricing-card > .price-wrapper > .timeframe {
+    font-size: 18px;
+    color: var(--black);
+}
+
+.pricing-section > .pricing-card > .services {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 24px;
+    font-family: Effra,serif;
+    font-size: 18px;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-section > .pricing-card > .services > li::before {
+    content: url("../images/tick.svg");
+    padding-right: 8px;
+}
+
+.pricing-section > .pricing-card > .delimiter {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 1024px) {
+    .pricing-section {
+        flex-direction: column;
+        row-gap: 24px;
+        margin-top: 80px;
+    }
+
+    .pricing-switcher > .text-wrapper {
+        font-size: 18px;
+    }
+
+    .pricing-section > .pricing-card {
+        padding: 30px 30px 24px 30px;
+        width: 279px;
+        height: 548px;
+    }
+
+    .pricing-switcher > .tooltip {
+        display: flex;
+        flex-direction: column-reverse;
+        bottom: -66px;
+        left: 204px;
+    }
+
+    .pricing-switcher > .tooltip > .text-wrapper {
+        padding-top: 5px;
+        font-size: 12px;
+        line-height: 12px;
+        width: 60px;
+    }
+
+    .pricing-switcher > .tooltip img {
+        transform: scaleX(-1) rotate(250deg);
+    }
+
+    .pricing-section > .pricing-card > .heading {
+        font-family: "Effra", serif;
+        font-size: 32px;
+        margin-bottom: 14px;
+    }
+
+    .pricing-section > .pricing-card > .description {
+        font-family: "Effra", serif;
+        font-size: 18px;
+    }
+
+    .pricing-section > .pricing-card > .price-wrapper > .price {
+        font-family: "Effra Medium", serif;
+        font-size: 60px;
+        color: var(--black);
+    }
+
+    .pricing-section > .pricing-card > .price-wrapper > .timeframe {
+        font-family: "Effra", serif;
+        font-size: 18px;
+        color: var(--black);
+    }
+}

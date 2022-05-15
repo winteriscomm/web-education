@@ -1,0 +1,135 @@
+.content-section {
+
+}
+
+.content-section > .content-box {
+    padding: 140px;
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.content-section > .content-box.gray-bg {
+    background-color: var(--gray5);
+}
+
+.content-section > .content-box.black-bg {
+    background-color: var(--black);
+}
+
+.content-section > .content-box.primary-bg {
+    background-color: var(--primary);
+}
+
+.content-section > .content-box span {
+    color: var(--gray2);
+}
+
+.content-section > .content-box > .heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.brand-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    /*gap: 40px;*/
+}
+
+.brand-wrapper > .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 266px; /* with grid can be auto */
+    height: 120px;
+    background-color: var(--gray3);
+    border-radius: 8px;
+}
+
+.brand-wrapper > .brand picture{
+    display: flex;
+}
+
+.content-box > .social-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 77px;
+}
+
+.content-box > .social-box-wrapper > .social-box {
+    max-height: 124px;
+    border-radius: 8px;
+}
+
+.primary-bg {
+    background-color: var(--primary);
+}
+
+.content-box > .social-box-wrapper > .social-box img {
+    margin: 32px;
+}
+
+.content-box > .popular-tweets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box > .popular-tweets {
+    margin-bottom: 80px;
+}
+
+.content-box > .popular-tweets img {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .content-section > .content-box {
+        padding: 80px 18px;
+        font-family: "Effra Heavy", serif;
+        font-size: 36px;
+        font-weight: normal;
+    }
+
+    .content-section > .content-box > .heading {
+        margin-bottom: 42px;
+    }
+
+    .brand-wrapper {
+        row-gap: 14px;
+        column-gap: 15px;
+    }
+
+    .brand-wrapper > .brand {
+        width: 162px; /* with grid can be auto */
+        height: 74px;
+    }
+
+    .content-box > .social-box-wrapper > .social-box {
+        max-height: 63px;
+    }
+
+    .content-box > .social-box-wrapper > .social-box img {
+        max-height: 31px;
+        margin: 16px;
+    }
+
+    .content-box > .popular-tweets {
+        margin-bottom: 16px;
+    }
+
+    .content-box > .popular-tweets img {
+        max-width: 339px;
+        margin-bottom: 16px;
+    }
+}

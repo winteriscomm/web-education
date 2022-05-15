@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Effra';
+    src: url('../font/Effra_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Effra Heavy';
+    src: url('../font/Effra_Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'Effra Medium';
+    src: url('../font/Effra_Medium.ttf');
+}
+
+@font-face {
+    font-family: 'GoodDog';
+    src: url('../font/GoodDog_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Regular.ttf');
+}
