@@ -151,6 +151,7 @@
         flex-direction: column-reverse;
         bottom: -66px;
         left: 204px;
+        width: 50px;
     }
 
     .pricing-switcher > .tooltip > .text-wrapper {
