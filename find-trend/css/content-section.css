@@ -1,31 +1,31 @@
-.content-section {
-
-}
-
-.content-section > .content-box {
+.content-box {
     padding: 140px;
     font-size: 64px;
     font-weight: bold;
     color: var(--black);
 }
 
-.content-section > .content-box.gray-bg {
+.white-bg {
+    background-color: var(--offWhite);
+}
+
+.gray-bg {
     background-color: var(--gray5);
 }
 
-.content-section > .content-box.black-bg {
+.black-bg {
     background-color: var(--black);
 }
 
-.content-section > .content-box.primary-bg {
+.primary-bg {
     background-color: var(--primary);
 }
 
-.content-section > .content-box span {
+.gray-text {
     color: var(--gray2);
 }
 
-.content-section > .content-box > .heading {
+.content-box > .heading {
     text-align: center;
     margin-bottom: 80px;
 }
@@ -42,7 +42,7 @@
     /*gap: 40px;*/
 }
 
-.brand-wrapper > .brand {
+.brand {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,27 +52,24 @@
     border-radius: 8px;
 }
 
-.brand-wrapper > .brand picture{
+.brand picture {
     display: flex;
 }
 
-.content-box > .social-box-wrapper {
+.social-box-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    column-gap: 24px;
     margin-bottom: 77px;
 }
 
-.content-box > .social-box-wrapper > .social-box {
+.social-box {
     max-height: 124px;
     border-radius: 8px;
 }
 
-.primary-bg {
-    background-color: var(--primary);
-}
-
-.content-box > .social-box-wrapper > .social-box img {
+.social-img {
     margin: 32px;
 }
 
@@ -81,27 +78,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.content-box > .popular-tweets {
     margin-bottom: 80px;
 }
 
-.content-box > .popular-tweets img {
+.popular-tweets img {
     max-width: 800px;
     margin-bottom: 40px;
 }
 
 
 @media screen and (max-width: 1024px) {
-    .content-section > .content-box {
+    .content-box {
         padding: 80px 18px;
         font-family: "Effra Heavy", serif;
         font-size: 36px;
         font-weight: normal;
     }
 
-    .content-section > .content-box > .heading {
+    .content-box .heading {
         margin-bottom: 42px;
     }
 
@@ -110,25 +104,25 @@
         column-gap: 15px;
     }
 
-    .brand-wrapper > .brand {
+    .brand {
         width: 162px; /* with grid can be auto */
         height: 74px;
     }
 
-    .content-box > .social-box-wrapper > .social-box {
+    .social-box {
         max-height: 63px;
     }
 
-    .content-box > .social-box-wrapper > .social-box img {
+    .social-box img {
         max-height: 31px;
         margin: 16px;
     }
 
-    .content-box > .popular-tweets {
+    .popular-tweets {
         margin-bottom: 16px;
     }
 
-    .content-box > .popular-tweets img {
+    .popular-tweets img {
         max-width: 339px;
         margin-bottom: 16px;
     }

@@ -1,4 +1,4 @@
-.content-box.black-bg > .heading {
+.black-bg > .heading {
     color: var(--offWhite);
 }
 
@@ -18,12 +18,12 @@
     line-height: 29px;
 }
 
-.pricing-switcher > .text-wrapper.active {
-    color: var(--offWhite);
+.pricing-switcher > .text-wrapper {
+    color: var(--gray1);
 }
 
-.pricing-switcher > .text-wrapper {
-    color: var(--gray3);
+.pricing-switcher > .text-wrapper.active {
+    color: var(--offWhite);
 }
 
 .pricing-switcher > .tooltip {
@@ -51,45 +51,46 @@
 .pricing-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     column-gap: 40px;
     font-weight: normal;
     margin-top: 40px;
 }
 
-.pricing-section > .pricing-card {
+.pricing-card {
     display: flex;
     justify-content: start;
     flex-direction: column;
+    flex: 1;
     padding: 32px 32px 24px 32px;
-    width: 296px;
-    height: 584px;
+    width: auto;
     outline: none;
     border-radius: 16px;
     background-color: var(--gray5);
     transition: all 1s;
 }
 
-.pricing-section > .pricing-card:hover {
+.pricing-card:hover {
     background-color: var(--primary);
 }
 
-.pricing-section > .pricing-card > .center-content > .btn {
+.pricing-card .btn {
     width: 100%;
+    margin-top: 40px;
     transition: all 1s;
 }
 
-.pricing-section > .pricing-card:hover > .center-content > .btn {
+.pricing-card:hover .btn {
     color: var(--offWhite);
     background-color: var(--black);
 }
 
-.pricing-section > .pricing-card > .heading {
+.pricing-card .heading {
     font-family: "Effra Medium", serif;
     font-size: 36px;
 }
 
-.pricing-section > .pricing-card > .description {
+.pricing-card .description {
     font-family: "Effra Medium", serif;
     font-size: 18px;
 }
@@ -131,7 +132,8 @@
 
 @media screen and (max-width: 1024px) {
     .pricing-section {
-        flex-direction: column;
+        display: grid;
+        grid-auto-rows: 1fr;
         row-gap: 24px;
         margin-top: 80px;
     }
@@ -142,8 +144,6 @@
 
     .pricing-section > .pricing-card {
         padding: 30px 30px 24px 30px;
-        width: 279px;
-        height: 548px;
     }
 
     .pricing-switcher > .tooltip {

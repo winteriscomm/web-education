@@ -1,22 +1,21 @@
 .btn {
     display: flex;
     justify-content: center;
-    width: 129px;
+    min-width: 129px;
     height: 18px;
     font-family: Effra, serif;
     font-size: 18px;
     border-radius: 40px;
 }
 
-.btn.btn-light {
-    width: 129px;
+.btn-light {
     padding-top: 12px;
     padding-bottom: 12px;
     color: var(--black);
     background-color: var(--offWhite);
 }
 
-.btn.btn-standard {
+.btn-standard {
     width: fit-content;
     padding: 16px 32px;
     font-size: 18px;
@@ -30,21 +29,24 @@ a.btn  {
     text-decoration: none;
 }
 
-.btn.btn-standard.btn-primary {
+.btn.btn-primary {
     color: var(--black);
     background-color: var(--primary);
 }
 
-.btn.btn-primary:hover {
+.btn-primary:hover {
     background-color: var(--button-hover);
 }
 
-.btn.btn-standard.btn-dark {
+.btn.btn-dark {
     color: var(--offWhite);
     background-color: var(--black);
 }
 
 .btn-toggle {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
     position: relative;
     background-color: var(--offWhite);
     width: 104px;
@@ -63,11 +65,34 @@ a.btn  {
     height: 36px;
     border-radius: 99px;
     margin: 8px;
+    transition: all 1s;
+}
+
+.btn-toggle:checked::after {
+    transform: translateX(52px);
+}
+
+.left-option {
+    color: var(--offWhite);
+    transition: all 1s;
+}
+
+.right-option {
+    color: var(--gray1);
+    transition: all 1s;
+}
+
+.btn-toggle:checked ~ .left-option {
+    color: var(--gray1);
+}
+
+.btn-toggle:checked ~ .right-option {
+    color: var(--offWhite);
 }
 
 
 @media screen and (max-width: 1024px) {
-    .btn.btn-standard {
+    .btn-standard {
         padding: 12px 24px;
         height:14px;
         font-size: 14px;
@@ -76,10 +101,15 @@ a.btn  {
 
     .btn-toggle {
         height: 44px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .btn-toggle::after {
         width: 28px;
         height: 28px;
+    }
+
+    .btn-toggle:checked::after {
+        transform: translateX(60px);
     }
 }

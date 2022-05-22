@@ -8,17 +8,17 @@
     height: 900px;
 }
 
-.hero-section > .hero-content-wrapper {
+.hero-content-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 700px;
     height: 370px;
-    margin-top: 198px;
+    margin-top: 99px;
     margin-bottom: 95px;
 }
 
-.hero-section > .hero-content-wrapper > .heading {
+.hero-content-wrapper .heading {
     font-family: "Effra Heavy", serif;
     font-size: 72px;
     line-height: 80px;
@@ -27,7 +27,7 @@
     margin-bottom: 24px;
 }
 
-.hero-section > .hero-content-wrapper > .description {
+.hero-content-wrapper .description {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
@@ -53,7 +53,7 @@
     color: var(--offWhite);
 }
 
-.get-started > .tooltip > .text-wrapper {
+.get-started .tooltip > .text-wrapper {
     font-family: GoodDog, serif;
     font-size: 14px;
     line-height: 14px;
@@ -61,7 +61,7 @@
     width: 93px;
 }
 
-.get-started > .tooltip > img {
+.get-started .tooltip > img {
     width: 28.39px;
     height: 34.45px;
     transform: rotate(107.94deg);
@@ -72,13 +72,13 @@
         height: 812px;
     }
 
-    .hero-section > .hero-content-wrapper {
+    .hero-content-wrapper {
         margin-top: 144px;
         margin-bottom: 60px;
         margin-left: 5px;
     }
 
-    .hero-section > .hero-content-wrapper > .heading {
+    .hero-content-wrapper > .heading {
         font-size: 36px;
         line-height: 1.12em;
         font-weight: 400;
@@ -86,7 +86,7 @@
         margin-bottom: 16px;
     }
 
-    .hero-section > .hero-content-wrapper > .description {
+    .hero-content-wrapper > .description {
         font-size: 14px;
         line-height: 1.5em;
         margin-left: 45px;

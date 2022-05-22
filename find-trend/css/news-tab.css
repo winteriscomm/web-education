@@ -29,7 +29,7 @@
     position: relative;
 }
 
-.news-wrapper > .news-box {
+.news-box {
     background-color: var(--gray3);
     margin-top: 60px;
     margin-bottom: 60px;
@@ -37,11 +37,11 @@
     border-radius: 16px;
 }
 
-.news-wrapper > .news-box > .media-item {
+.news-box > .media-item {
     background-color: var(--black4);
 }
 
-.news-wrapper > .news-box > .media-item:after {
+.news-box > .media-item:after {
     background: linear-gradient(270deg, var(--black4) 53.65%, rgba(24, 24, 24, 0.8) 100%);
 }
 
