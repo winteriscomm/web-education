@@ -32,7 +32,7 @@
 
 .brand-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 40px;
@@ -69,8 +69,17 @@
     border-radius: 8px;
 }
 
-.social-img {
+.social-box:hover {
+    background-color: var(--primary);
+}
+
+.social-link {
+    display: inline-block;
     margin: 32px;
+}
+
+.social-img {
+    display: block;
 }
 
 .content-box > .popular-tweets {
@@ -113,9 +122,12 @@
         max-height: 63px;
     }
 
-    .social-box img {
-        max-height: 31px;
+    .social-link {
         margin: 16px;
+    }
+
+    .social-img {
+        max-height: 31px;
     }
 
     .popular-tweets {

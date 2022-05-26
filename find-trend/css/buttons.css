@@ -15,6 +15,10 @@
     background-color: var(--offWhite);
 }
 
+.btn-light:hover {
+    background-color: var(--gray3);
+}
+
 .btn-standard {
     width: fit-content;
     padding: 16px 32px;
@@ -23,13 +27,11 @@
     font-weight: 700;
 }
 
-a.btn  {
-    color: var(--black);
-    background-color: var(--offWhite);
+a.btn {
     text-decoration: none;
 }
 
-.btn.btn-primary {
+.btn-primary {
     color: var(--black);
     background-color: var(--primary);
 }
@@ -38,9 +40,13 @@ a.btn  {
     background-color: var(--button-hover);
 }
 
-.btn.btn-dark {
+.btn-dark {
     color: var(--offWhite);
     background-color: var(--black);
+}
+
+.btn-dark:hover {
+    background-color: var(--black2);
 }
 
 .btn-toggle {
@@ -94,7 +100,7 @@ a.btn  {
 @media screen and (max-width: 1024px) {
     .btn-standard {
         padding: 12px 24px;
-        height:14px;
+        height: 14px;
         font-size: 14px;
         line-height: 19.6px;
     }
